@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import BundleCard from "./BundleCard";
 
 interface ThemedItem {
@@ -9,6 +10,7 @@ interface ThemedItem {
   bonus?: string;
   itemType?: string;
   size?: 'small' | 'medium' | 'large' | 'wide';
+  link?: string;
 }
 
 interface ThemedShopSectionProps {
@@ -18,6 +20,14 @@ interface ThemedShopSectionProps {
 }
 
 const ThemedShopSection = ({ title, themeColor, items }: ThemedShopSectionProps) => {
+  const navigate = useNavigate();
+
+  const handleItemClick = (item: ThemedItem) => {
+    if (item.link) {
+      navigate(item.link);
+    }
+  };
+
   return (
     <section className="mb-8">
       {/* Section Title */}
@@ -40,14 +50,15 @@ const ThemedShopSection = ({ title, themeColor, items }: ThemedShopSectionProps)
         
         <div className="grid grid-cols-4 md:grid-cols-6 gap-3 auto-rows-[140px] relative z-10">
           {items.map((item, index) => (
-            <BundleCard key={index} {...item} />
+            <div key={index} onClick={() => handleItemClick(item)}>
+              <BundleCard {...item} />
+            </div>
           ))}
         </div>
       </div>
     </section>
   );
 };
-
 // Pre-configured themed sections
 export const HatsuneMikuSection = () => {
   const items = [
@@ -150,6 +161,7 @@ export const McLarenSection = () => {
       image: "https://fortnite-api.com/images/cosmetics/br/wrap_356_intrepidmclaren/icon.png",
       price: 2500,
       size: 'wide' as const,
+      link: '/mclaren',
     },
   ];
 
