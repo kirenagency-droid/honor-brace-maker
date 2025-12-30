@@ -1,4 +1,5 @@
 import SkinCard from "./SkinCard";
+import { HatsuneMikuSection, TerminatorSection, McLarenSection } from "./ThemedShopSection";
 
 const featuredSkins = [
   {
@@ -90,6 +91,11 @@ const ShopSection = () => {
           Voir tout
         </button>
       </div>
+
+      {/* Themed Sections */}
+      <HatsuneMikuSection />
+      <TerminatorSection />
+      <McLarenSection />
 
       {/* Featured Items */}
       <div className="mb-10">
