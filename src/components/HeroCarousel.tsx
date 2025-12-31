@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Pause } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import heroImage from "@/assets/hero-ishowspeed.webp";
+import kimImage from "@/assets/hero-kim-kardashian.webp";
 
 const HeroCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -20,12 +21,12 @@ const HeroCarousel = () => {
     },
     {
       id: 2,
-      image: heroImage,
+      image: kimImage,
       title: "FORTNITE",
-      subtitle: "NOUVELLE SAISON",
-      brand: "CHAPITRE 5",
-      description: "Découvrez les nouveautés de la saison !",
-      cta: "JOUER MAINTENANT",
+      subtitle: "",
+      brand: "KIM KARDASHIAN",
+      description: "L'icône ultime est arrivée dans Fortnite",
+      cta: "OUVRIR LA BOUTIQUE D'OBJETS",
     },
   ];
 
@@ -135,9 +136,11 @@ const HeroCarousel = () => {
 
             {/* Subtitle badges */}
             <motion.div variants={itemVariants} className="flex items-center gap-3 mb-6">
-              <span className="bg-foreground text-background px-3 py-1 text-sm font-bold uppercase tracking-wider">
-                {slides[currentSlide].subtitle}
-              </span>
+              {slides[currentSlide].subtitle && (
+                <span className="bg-foreground text-background px-3 py-1 text-sm font-bold uppercase tracking-wider">
+                  {slides[currentSlide].subtitle}
+                </span>
+              )}
               <span className="font-fortnite text-2xl tracking-wider italic">
                 {slides[currentSlide].brand}
               </span>
