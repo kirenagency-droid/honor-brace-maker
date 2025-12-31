@@ -1,5 +1,13 @@
 import SkinCard from "./SkinCard";
-import { HatsuneMikuSection, TerminatorSection, McLarenSection } from "./ThemedShopSection";
+import { 
+  HatsuneMikuSection, 
+  TerminatorSection, 
+  McLarenSection,
+  StrangerThingsSection,
+  IShowSpeedSection,
+  PulpFictionSection,
+  JohnWickSection
+} from "./ThemedShopSection";
 
 const featuredSkins = [
   {
@@ -93,6 +101,10 @@ const ShopSection = () => {
       </div>
 
       {/* Themed Sections */}
+      <StrangerThingsSection />
+      <IShowSpeedSection />
+      <PulpFictionSection />
+      <JohnWickSection />
       <HatsuneMikuSection />
       <TerminatorSection />
       <McLarenSection />
