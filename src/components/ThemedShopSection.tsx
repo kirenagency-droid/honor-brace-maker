@@ -179,6 +179,12 @@ export const StrangerThingsSection = () => {
       size: 'large' as const,
     },
     {
+      name: "Vecna",
+      image: "https://fortnite-api.com/images/cosmetics/br/cid_a_358_athena_commando_m_intrepidvecna/icon.png",
+      price: 2000,
+      size: 'medium' as const,
+    },
+    {
       name: "Onze",
       image: "https://fortnite-api.com/images/cosmetics/br/cid_a_357_athena_commando_f_intrepideleven/icon.png",
       price: 1800,
@@ -186,16 +192,28 @@ export const StrangerThingsSection = () => {
       size: 'medium' as const,
     },
     {
+      name: "Dustin Henderson",
+      image: "https://fortnite-api.com/images/cosmetics/br/cid_a_359_athena_commando_m_intrepiddustin/icon.png",
+      price: 1500,
+      size: 'medium' as const,
+    },
+    {
+      name: "Lucas Sinclair",
+      image: "https://fortnite-api.com/images/cosmetics/br/cid_a_360_athena_commando_m_intrepidlucas/icon.png",
+      price: 1500,
+      size: 'medium' as const,
+    },
+    {
       name: "Hopper chef",
       image: "https://fortnite-api.com/images/cosmetics/br/cid_a_356_athena_commando_m_intrepidhopper/icon.png",
       price: 1500,
-      size: 'medium' as const,
+      size: 'small' as const,
     },
     {
       name: "Demogorgon",
       image: "https://fortnite-api.com/images/cosmetics/br/cid_a_355_athena_commando_m_intrepiddemogorgon/icon.png",
       price: 1200,
-      size: 'medium' as const,
+      size: 'small' as const,
     },
   ];
 
