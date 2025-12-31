@@ -1,6 +1,11 @@
 import { useNavigate } from "react-router-dom";
 import BundleCard from "./BundleCard";
 
+import strangerDustinCard from "@/assets/shop/stranger-dustin.png";
+import strangerLucasCard from "@/assets/shop/stranger-lucas.png";
+import strangerVecnaCard from "@/assets/shop/stranger-vecna.png";
+import ishowspeedCard from "@/assets/shop/ishowspeed-card.png";
+
 interface ThemedItem {
   name: string;
   image: string;
@@ -172,7 +177,7 @@ export const StrangerThingsSection = () => {
   const items = [
     {
       name: "Pack Vecna",
-      image: "https://fortnite-api.com/images/cosmetics/br/cid_a_358_athena_commando_m_intrepidvecna/icon.png",
+      image: strangerVecnaCard,
       price: 2500,
       originalPrice: 3100,
       discount: "600 V-BUCKS DE RÉDUC.",
@@ -180,7 +185,7 @@ export const StrangerThingsSection = () => {
     },
     {
       name: "Vecna",
-      image: "https://fortnite-api.com/images/cosmetics/br/cid_a_358_athena_commando_m_intrepidvecna/icon.png",
+      image: strangerVecnaCard,
       price: 2000,
       size: 'medium' as const,
     },
@@ -193,13 +198,13 @@ export const StrangerThingsSection = () => {
     },
     {
       name: "Dustin Henderson",
-      image: "https://fortnite-api.com/images/cosmetics/br/cid_a_359_athena_commando_m_intrepiddustin/icon.png",
+      image: strangerDustinCard,
       price: 1500,
       size: 'medium' as const,
     },
     {
       name: "Lucas Sinclair",
-      image: "https://fortnite-api.com/images/cosmetics/br/cid_a_360_athena_commando_m_intrepidlucas/icon.png",
+      image: strangerLucasCard,
       price: 1500,
       size: 'medium' as const,
     },
@@ -224,14 +229,14 @@ export const IShowSpeedSection = () => {
   const items = [
     {
       name: "IShowSpeed",
-      image: "https://fortnite-api.com/images/cosmetics/br/cid_a_311_athena_commando_m_intrepidspeed/icon.png",
+      image: ishowspeedCard,
       price: 2000,
       bonus: "ACCESSOIRE DE DOS BONUS !",
       size: 'large' as const,
     },
     {
       name: "Pack Série Icône Speed",
-      image: "https://fortnite-api.com/images/cosmetics/br/cid_a_311_athena_commando_m_intrepidspeed/icon.png",
+      image: ishowspeedCard,
       price: 2800,
       originalPrice: 4000,
       discount: "1200 V-BUCKS DE RÉDUC.",
