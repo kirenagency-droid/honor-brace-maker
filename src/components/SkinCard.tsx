@@ -38,6 +38,13 @@ const SkinCard = ({ name, image, price, rarity, isNew = false }: SkinCardProps) 
         <img
           src={image}
           alt={name}
+          loading="lazy"
+          onError={(e) => {
+            const img = e.currentTarget;
+            if (img.dataset.fallback) return;
+            img.dataset.fallback = "1";
+            img.src = "/placeholder.svg";
+          }}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
         />
       </div>
