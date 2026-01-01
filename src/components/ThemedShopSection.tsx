@@ -5,6 +5,7 @@ import strangerDustinCard from "@/assets/shop/stranger-dustin.png";
 import strangerLucasCard from "@/assets/shop/stranger-lucas.png";
 import strangerVecnaCard from "@/assets/shop/stranger-vecna.png";
 import ishowspeedCard from "@/assets/shop/ishowspeed-card.png";
+import johnWickCard from "@/assets/shop/john-wick.png";
 
 interface ThemedItem {
   name: string;
@@ -298,7 +299,7 @@ export const JohnWickSection = () => {
   const items = [
     {
       name: "Pack John Wick",
-      image: "https://fortnite-api.com/images/cosmetics/br/cid_416_athena_commando_m_intrepidwicked/icon.png",
+      image: johnWickCard,
       price: 2600,
       originalPrice: 3800,
       discount: "1200 V-BUCKS DE RÉDUC.",
@@ -306,20 +307,20 @@ export const JohnWickSection = () => {
     },
     {
       name: "John Wick",
-      image: "https://fortnite-api.com/images/cosmetics/br/cid_416_athena_commando_m_intrepidwicked/icon.png",
+      image: johnWickCard,
       price: 2000,
       bonus: "ACCESSOIRE DE DOS BONUS !",
       size: 'medium' as const,
     },
     {
       name: "Sofia",
-      image: "https://fortnite-api.com/images/cosmetics/br/cid_499_athena_commando_f_intrepidhalle/icon.png",
+      image: johnWickCard,
       price: 1800,
       size: 'medium' as const,
     },
     {
       name: "Gold Coin",
-      image: "https://fortnite-api.com/images/cosmetics/br/pickaxe_id_333_intrepidwicked/icon.png",
+      image: johnWickCard,
       price: 800,
       size: 'small' as const,
     },
