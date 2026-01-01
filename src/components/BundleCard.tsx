@@ -30,7 +30,7 @@ const BundleCard = ({
 
   return (
     <div 
-      className={`bundle-card group relative overflow-hidden rounded-lg bg-white/5 border border-white/10 hover:border-white/30 transition-all duration-300 ${sizeClasses[size]} ${onClick ? 'cursor-pointer' : ''}`}
+      className={`bundle-card group relative overflow-hidden rounded-lg bg-white/5 border border-white/10 transition-all duration-300 hover:scale-[1.03] hover:border-accent/50 hover:shadow-[0_0_25px_rgba(255,204,0,0.3)] ${sizeClasses[size]} ${onClick ? 'cursor-pointer' : ''}`}
       onClick={onClick}
       role={onClick ? 'button' : undefined}
       tabIndex={onClick ? 0 : undefined}
@@ -51,7 +51,7 @@ const BundleCard = ({
       )}
 
       {/* Image */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 overflow-hidden">
         <img
           src={image}
           alt={name}
@@ -62,9 +62,11 @@ const BundleCard = ({
             img.dataset.fallback = "1";
             img.src = "/placeholder.svg";
           }}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-out"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent group-hover:from-black/70 group-hover:via-transparent transition-all duration-300" />
+        {/* Glow overlay on hover */}
+        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-t from-accent/10 via-transparent to-transparent" />
       </div>
 
       {/* Info */}
