@@ -7,6 +7,7 @@ interface BundleCardProps {
   bonus?: string;
   itemType?: string;
   size?: 'small' | 'medium' | 'large' | 'wide';
+  onClick?: () => void;
 }
 
 const BundleCard = ({ 
@@ -17,7 +18,8 @@ const BundleCard = ({
   discount, 
   bonus,
   itemType,
-  size = 'medium' 
+  size = 'medium',
+  onClick
 }: BundleCardProps) => {
   const sizeClasses = {
     small: 'col-span-1 row-span-1',
@@ -27,7 +29,13 @@ const BundleCard = ({
   };
 
   return (
-    <div className={`bundle-card group relative overflow-hidden rounded-lg bg-white/5 border border-white/10 cursor-pointer hover:border-white/30 transition-all duration-300 ${sizeClasses[size]}`}>
+    <div 
+      className={`bundle-card group relative overflow-hidden rounded-lg bg-white/5 border border-white/10 hover:border-white/30 transition-all duration-300 ${sizeClasses[size]} ${onClick ? 'cursor-pointer' : ''}`}
+      onClick={onClick}
+      role={onClick ? 'button' : undefined}
+      tabIndex={onClick ? 0 : undefined}
+      onKeyDown={onClick ? (e) => { if (e.key === 'Enter' || e.key === ' ') onClick(); } : undefined}
+    >
       {/* Discount Badge */}
       {discount && (
         <div className="absolute top-3 left-3 z-10 bg-accent text-accent-foreground text-xs font-bold px-2 py-1 rounded font-fortnite tracking-wide">

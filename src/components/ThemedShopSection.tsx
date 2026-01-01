@@ -56,9 +56,11 @@ const ThemedShopSection = ({ title, themeColor, items }: ThemedShopSectionProps)
         
         <div className="grid grid-cols-4 md:grid-cols-6 gap-3 auto-rows-[140px] relative z-10">
           {items.map((item, index) => (
-            <div key={index} onClick={() => handleItemClick(item)}>
-              <BundleCard {...item} />
-            </div>
+            <BundleCard 
+              key={index} 
+              {...item} 
+              onClick={item.link ? () => handleItemClick(item) : undefined}
+            />
           ))}
         </div>
       </div>
