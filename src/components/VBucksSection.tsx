@@ -35,13 +35,6 @@ const VBucksSection = () => {
             key={index}
             className="group relative bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 rounded-lg md:rounded-xl overflow-hidden cursor-pointer transition-all duration-300 hover:scale-[1.03] hover:border-primary hover:shadow-[0_0_25px_rgba(255,204,0,0.3)]"
           >
-            {/* V-Bucks Amount Badge */}
-            <div className="absolute top-2 md:top-3 left-1/2 -translate-x-1/2 z-10">
-              <span className="bg-background/80 backdrop-blur-sm text-primary font-bold px-2 md:px-3 py-0.5 md:py-1 rounded-full text-xs md:text-sm whitespace-nowrap border border-primary/50">
-                {option.amount.toLocaleString()} V-Bucks
-              </span>
-            </div>
-
             {/* V-Bucks Image */}
             <img 
               src={option.image} 
@@ -49,8 +42,11 @@ const VBucksSection = () => {
               className="w-full aspect-[3/4] object-cover object-top"
             />
 
-            {/* Price Badge */}
-            <div className="absolute bottom-2 md:bottom-3 left-1/2 -translate-x-1/2">
+            {/* Bottom Info */}
+            <div className="absolute bottom-2 md:bottom-3 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1">
+              <span className="bg-background/80 backdrop-blur-sm text-primary font-bold px-2 md:px-3 py-0.5 md:py-1 rounded-full text-[10px] md:text-xs whitespace-nowrap border border-primary/50">
+                {option.amount.toLocaleString()} V-Bucks
+              </span>
               <span className="bg-primary/90 text-background font-bold px-3 md:px-4 py-1 md:py-1.5 rounded-full text-xs md:text-sm whitespace-nowrap">
                 {option.price.toFixed(2)} €
               </span>
