@@ -57,7 +57,7 @@ const ThemedShopSection = ({ title, themeColor, items }: ThemedShopSectionProps)
           }}
         />
         
-        <div className="grid grid-cols-4 md:grid-cols-6 gap-3 auto-rows-[140px] relative z-10">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 md:gap-3 auto-rows-[100px] sm:auto-rows-[120px] md:auto-rows-[140px] relative z-10">
           {items.map((item, index) => (
             <BundleCard 
               key={index} 
