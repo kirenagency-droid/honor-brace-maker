@@ -85,15 +85,11 @@ const ShopCard = ({
               {name}
             </h3>
             
-            {/* Price with V-Bucks icon */}
+            {/* Price */}
             <div className="flex items-center gap-1.5 mt-1">
-              {/* V-Bucks Icon */}
-              <div className="w-4 h-4 md:w-5 md:h-5 rounded-full bg-[hsl(var(--shop-badge-bg))] flex items-center justify-center">
-                <span className="text-[hsl(var(--shop-badge-text))] text-[8px] md:text-[10px] font-bold">V</span>
-              </div>
-              <span className="text-white font-bold text-sm md:text-base">{price.toLocaleString()}</span>
+              <span className="text-white font-bold text-sm md:text-base">{price.toFixed(2)} €</span>
               {originalPrice && (
-                <span className="text-white/50 text-xs line-through ml-1">{originalPrice.toLocaleString()}</span>
+                <span className="text-white/50 text-xs line-through ml-1">{originalPrice.toFixed(2)} €</span>
               )}
             </div>
           </div>
