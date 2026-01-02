@@ -80,11 +80,11 @@ const dailySkins = [
 
 const ShopSection = () => {
   return (
-    <section className="py-12 px-4 md:px-8 lg:px-12 bg-background">
+    <section className="py-8 md:py-12 px-4 md:px-8 lg:px-12 bg-background">
       {/* Section Header */}
-      <div className="flex items-center justify-between mb-8">
-        <div className="flex items-center gap-4">
-          <h2 className="font-fortnite text-3xl md:text-4xl text-foreground tracking-wider">
+      <div className="flex items-center justify-between mb-6 md:mb-8">
+        <div className="flex items-center gap-2 md:gap-4">
+          <h2 className="font-fortnite text-2xl md:text-3xl lg:text-4xl text-foreground tracking-wider">
             BOUTIQUE
           </h2>
           <div className="hidden md:flex items-center gap-2 text-muted-foreground text-sm">
@@ -95,7 +95,7 @@ const ShopSection = () => {
             <span>Mise à jour dans 12:34:56</span>
           </div>
         </div>
-        <button className="btn-secondary text-sm">
+        <button className="btn-secondary text-xs md:text-sm px-3 md:px-4">
           Voir tout
         </button>
       </div>
@@ -110,9 +110,9 @@ const ShopSection = () => {
       <McLarenSection />
 
       {/* Featured Items */}
-      <div className="mb-10">
-        <h3 className="font-fortnite text-xl text-accent mb-4 tracking-wide">À LA UNE</h3>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="mb-8 md:mb-10">
+        <h3 className="font-fortnite text-lg md:text-xl text-accent mb-3 md:mb-4 tracking-wide">À LA UNE</h3>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
           {featuredSkins.map((skin, index) => (
             <SkinCard key={index} {...skin} />
           ))}
@@ -121,8 +121,8 @@ const ShopSection = () => {
 
       {/* Daily Items */}
       <div>
-        <h3 className="font-fortnite text-xl text-accent mb-4 tracking-wide">QUOTIDIEN</h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+        <h3 className="font-fortnite text-lg md:text-xl text-accent mb-3 md:mb-4 tracking-wide">QUOTIDIEN</h3>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 md:gap-4">
           {dailySkins.map((skin, index) => (
             <SkinCard key={index} {...skin} />
           ))}
