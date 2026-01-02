@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import vbucks1000 from "@/assets/shop/vbucks-1000.jpg";
 import vbucks2800 from "@/assets/shop/vbucks-2800.jpg";
 import vbucks5000 from "@/assets/shop/vbucks-5000.jpg";
@@ -11,6 +12,18 @@ const vbucksOptions = [
 ];
 
 const VBucksSection = () => {
+  const navigate = useNavigate();
+
+  const handleVBucksClick = (option: { amount: number; price: number; image: string }) => {
+    navigate("/checkout", {
+      state: {
+        name: `${option.amount} V-Bucks`,
+        image: option.image,
+        price: option.price,
+      },
+    });
+  };
+
   return (
     <section className="py-8 md:py-12 px-4 md:px-8 lg:px-12 bg-background">
       {/* Section Header */}
@@ -33,6 +46,7 @@ const VBucksSection = () => {
         {vbucksOptions.map((option, index) => (
           <div
             key={index}
+            onClick={() => handleVBucksClick(option)}
             className="group relative bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 rounded-lg md:rounded-xl overflow-hidden cursor-pointer transition-all duration-300 hover:scale-[1.03] hover:border-primary hover:shadow-[0_0_25px_rgba(255,204,0,0.3)]"
           >
             {/* V-Bucks Image */}
