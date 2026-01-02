@@ -58,7 +58,7 @@ const BundleCard = ({
       )}
 
       {/* Image */}
-      <div className="absolute inset-0 overflow-hidden bg-gradient-to-b from-background/50 to-background/80">
+      <div className="absolute inset-0 overflow-hidden">
         <img
           src={image}
           alt={name}
@@ -69,7 +69,7 @@ const BundleCard = ({
             img.dataset.fallback = "1";
             img.src = "/placeholder.svg";
           }}
-          className="w-full h-full object-contain object-center group-hover:scale-105 transition-transform duration-500 ease-out"
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-out"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent group-hover:from-black/70 group-hover:via-transparent transition-all duration-300" />
         {/* Glow overlay on hover */}
