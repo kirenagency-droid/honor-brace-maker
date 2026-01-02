@@ -23,6 +23,17 @@ import kimKardashian from "@/assets/shop/kim-kardashian.webp";
 import vincentVega from "@/assets/shop/vincent-vega.png";
 import iceSpice from "@/assets/shop/ice-spice.webp";
 import lisa from "@/assets/shop/lisa.png";
+import raven from "@/assets/shop/raven.png";
+import darkBomber from "@/assets/shop/dark-bomber.png";
+import aura from "@/assets/shop/aura.png";
+import crystal from "@/assets/shop/crystal.png";
+import lynx from "@/assets/shop/lynx.png";
+import drift from "@/assets/shop/drift.png";
+import midas from "@/assets/shop/midas.png";
+import fishstick from "@/assets/shop/fishstick.png";
+import omega from "@/assets/shop/omega.png";
+import skullTrooper from "@/assets/shop/skull-trooper.png";
+import theReaper from "@/assets/shop/the-reaper.png";
 
 const bestSellers = [
   {
@@ -75,22 +86,15 @@ const bestSellers = [
     badgeType: "new" as const,
   },
   {
-    name: "PEELY DORÉ",
-    image: "https://media.fortniteapi.io/images/displayAssets/v2/DAv2_CID_701_Athena_Commando_M_BananaGold/MI_CID_701_Athena_Commando_M_BananaGold.png",
-    price: 1500,
-    badge: "NOUVEAU",
-    badgeType: "new" as const,
-  },
-  {
     name: "RAVEN",
-    image: "https://media.fortniteapi.io/images/displayAssets/v2/DAv2_CID_083_Athena_Commando_M_HighTower/MI_CID_083_Athena_Commando_M_HighTower.png",
+    image: raven,
     price: 2000,
-    badge: "À PERSONNALISER !",
+    badge: "LÉGENDAIRE",
     badgeType: "custom" as const,
   },
   {
     name: "DARK BOMBER",
-    image: "https://media.fortniteapi.io/images/displayAssets/v2/DAv2_CID_269_Athena_Commando_F_DarkBomber/MI_CID_269_Athena_Commando_F_DarkBomber.png",
+    image: darkBomber,
     price: 1200,
     originalPrice: 1500,
     badge: "300 V-BUCKS DE RÉDUC.",
@@ -98,74 +102,57 @@ const bestSellers = [
   },
   {
     name: "DRIFT",
-    image: "https://media.fortniteapi.io/images/displayAssets/v2/DAv2_CID_161_Athena_Commando_M_Drift/MI_CID_161_Athena_Commando_M_Drift.png",
+    image: drift,
     price: 1500,
   },
   {
     name: "MIDAS",
-    image: "https://media.fortniteapi.io/images/displayAssets/v2/DAv2_CID_694_Athena_Commando_M_CatBurglar/MI_CID_694_Athena_Commando_M_CatBurglar.png",
+    image: midas,
     price: 2000,
     badge: "LÉGENDAIRE",
     badgeType: "custom" as const,
   },
   {
     name: "FISHSTICK",
-    image: "https://media.fortniteapi.io/images/displayAssets/v2/DAv2_CID_315_Athena_Commando_M_TeriyakiFish/MI_CID_315_Athena_Commando_M_TeriyakiFish.png",
+    image: fishstick,
     price: 1200,
   },
   {
     name: "AURA",
-    image: "https://media.fortniteapi.io/images/displayAssets/v2/DAv2_CID_580_Athena_Commando_F_Goddess/MI_CID_580_Athena_Commando_F_Goddess.png",
+    image: aura,
     price: 800,
     badge: "POPULAIRE",
     badgeType: "new" as const,
   },
   {
     name: "CRYSTAL",
-    image: "https://media.fortniteapi.io/images/displayAssets/v2/DAv2_CID_581_Athena_Commando_M_Wizard/MI_CID_581_Athena_Commando_M_Wizard.png",
+    image: crystal,
     price: 800,
   },
   {
     name: "LYNX",
-    image: "https://media.fortniteapi.io/images/displayAssets/v2/DAv2_CID_349_Athena_Commando_F_IceLynx/MI_CID_349_Athena_Commando_F_IceLynx.png",
+    image: lynx,
     price: 1500,
     badge: "LÉGENDAIRE",
     badgeType: "custom" as const,
   },
   {
     name: "OMEGA",
-    image: "https://media.fortniteapi.io/images/displayAssets/v2/DAv2_CID_116_Athena_Commando_M_CarbideBlack/MI_CID_116_Athena_Commando_M_CarbideBlack.png",
+    image: omega,
     price: 2000,
     badge: "LÉGENDAIRE",
     badgeType: "custom" as const,
   },
   {
-    name: "CATALYST",
-    image: "https://media.fortniteapi.io/images/displayAssets/v2/DAv2_CID_478_Athena_Commando_F_RiftFemale/MI_CID_478_Athena_Commando_F_RiftFemale.png",
-    price: 1500,
-  },
-  {
-    name: "SHADOW OPS",
-    image: "https://media.fortniteapi.io/images/displayAssets/v2/DAv2_CID_086_Athena_Commando_F_Assassin/MI_CID_086_Athena_Commando_F_Assassin.png",
-    price: 1500,
-  },
-  {
     name: "SKULL TROOPER",
-    image: "https://media.fortniteapi.io/images/displayAssets/v2/DAv2_CID_030_Athena_Commando_M_Halloween/MI_CID_030_Athena_Commando_M_Halloween.png",
+    image: skullTrooper,
     price: 1500,
     badge: "RARE",
     badgeType: "custom" as const,
   },
   {
-    name: "TRAVIS SCOTT",
-    image: "https://media.fortniteapi.io/images/displayAssets/v2/DAv2_CID_434_Athena_Commando_M_Stormfighter/MI_CID_434_Athena_Commando_M_Stormfighter.png",
-    price: 1500,
-    badge: "ICÔNE",
-    badgeType: "new" as const,
-  },
-  {
     name: "THE REAPER",
-    image: "https://media.fortniteapi.io/images/displayAssets/v2/DAv2_CID_084_Athena_Commando_M_Assassin/MI_CID_084_Athena_Commando_M_Assassin.png",
+    image: theReaper,
     price: 2000,
     badge: "OG",
     badgeType: "custom" as const,
