@@ -12,8 +12,16 @@ import ishowspeedSkin from "@/assets/shop/ishowspeed-skin.png";
 import satoruGojo from "@/assets/shop/satoru-gojo.png";
 import nekoRx1 from "@/assets/shop/neko-rx1.png";
 import kimKardashian from "@/assets/shop/kim-kardashian.webp";
+import vincentVega from "@/assets/shop/vincent-vega.png";
 
 const bestSellers = [
+  {
+    name: "VINCENT VEGA",
+    image: vincentVega,
+    price: 1800,
+    badge: "ICÔNE",
+    badgeType: "new" as const,
+  },
   {
     name: "SPEED",
     image: ishowspeedSkin,
