@@ -8,6 +8,7 @@ import strangerElevenCard from "@/assets/shop/stranger-eleven.png";
 import strangerHopperCard from "@/assets/shop/stranger-hopper.png";
 import ishowspeedCard from "@/assets/shop/ishowspeed-card.png";
 import johnWickCard from "@/assets/shop/john-wick.png";
+import hatsuneMikuCard from "@/assets/shop/hatsune-miku.png";
 
 interface ThemedItem {
   name: string;
@@ -73,43 +74,11 @@ const ThemedShopSection = ({ title, themeColor, items }: ThemedShopSectionProps)
 export const HatsuneMikuSection = () => {
   const items = [
     {
-      name: "Pack Snow Miku",
-      image: "https://fortnite-api.com/images/cosmetics/br/character_snowmiku/icon.png",
-      price: 2200,
-      originalPrice: 3300,
-      discount: "1100 V-BUCKS DE RÉDUC.",
-      size: 'wide' as const,
-    },
-    {
-      name: "Snow Miku",
-      image: "https://fortnite-api.com/images/cosmetics/br/cid_a_272_athena_commando_f_intrepidmiku/icon.png",
+      name: "Hatsune Miku",
+      image: hatsuneMikuCard,
       price: 1500,
       bonus: "ACCESSOIRE DE DOS BONUS !",
-      size: 'medium' as const,
-    },
-    {
-      name: "Rabbit Yukine",
-      image: "https://fortnite-api.com/images/cosmetics/br/bid_756_intrepidmiku/icon.png",
-      price: 400,
-      size: 'medium' as const,
-    },
-    {
-      name: "Snow Mix",
-      image: "https://fortnite-api.com/images/cosmetics/br/eid_mikudance/icon.png",
-      price: 500,
-      size: 'small' as const,
-    },
-    {
-      name: "Flonflon des flocons",
-      image: "https://fortnite-api.com/images/cosmetics/br/pickaxe_id_669_intrepidmiku/icon.png",
-      price: 800,
-      size: 'small' as const,
-    },
-    {
-      name: "SnowMix♪",
-      image: "https://fortnite-api.com/images/cosmetics/br/musicpack_079_intrepidmiku/icon.png",
-      price: 500,
-      size: 'small' as const,
+      size: 'large' as const,
     },
   ];
 
