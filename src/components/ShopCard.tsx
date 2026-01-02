@@ -58,7 +58,7 @@ const ShopCard = ({
       )}
 
       {/* Character Image */}
-      <div className="relative w-full aspect-[3/4] overflow-hidden flex items-center justify-center p-2">
+      <div className="relative w-full aspect-[3/4] overflow-hidden">
         <img
           src={image}
           alt={name}
@@ -69,7 +69,7 @@ const ShopCard = ({
             img.dataset.fallback = "1";
             img.src = "/placeholder.svg";
           }}
-          className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
         />
         
         {/* Subtle gradient overlay at bottom */}
