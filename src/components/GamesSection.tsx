@@ -31,6 +31,17 @@ const GamesSection = () => {
     image: "https://cdn2.unrealengine.com/fortnite-og-key-art-1920x1080-1920x1080-e8b5f5e5d3b4.jpg",
     rating: "12+"
   }];
-  return;
+  return (
+    <section className="py-8 md:py-12 px-4 md:px-8 lg:px-12 bg-background">
+      <h2 className="font-fortnite text-3xl md:text-4xl lg:text-5xl text-foreground tracking-wider mb-8">
+        MODES DE JEU
+      </h2>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        {games.map((game) => (
+          <GameCard key={game.id} title={game.title} image={game.image} rating={game.rating} />
+        ))}
+      </div>
+    </section>
+  );
 };
 export default GamesSection;
