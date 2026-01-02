@@ -5,6 +5,7 @@ import strangerDustinCard from "@/assets/shop/stranger-dustin.png";
 import strangerLucasCard from "@/assets/shop/stranger-lucas.png";
 import strangerVecnaCard from "@/assets/shop/stranger-vecna.png";
 import strangerElevenCard from "@/assets/shop/stranger-eleven.png";
+import strangerHopperCard from "@/assets/shop/stranger-hopper.png";
 import ishowspeedCard from "@/assets/shop/ishowspeed-card.png";
 import johnWickCard from "@/assets/shop/john-wick.png";
 
@@ -195,7 +196,7 @@ export const StrangerThingsSection = () => {
     },
     {
       name: "Hopper chef",
-      image: "https://fortnite-api.com/images/cosmetics/br/cid_a_356_athena_commando_m_intrepidhopper/icon.png",
+      image: strangerHopperCard,
       price: 1500,
       size: 'small' as const,
     },
