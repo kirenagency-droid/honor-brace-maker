@@ -48,9 +48,14 @@ const Header = () => {
           
 
           {/* Download Button - Hidden on mobile */}
-          <button className="hidden sm:block btn-epic-primary text-sm">
+          <a 
+            href="https://www.fortnite.com/download?lang=fr" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hidden sm:block btn-epic-primary text-sm"
+          >
             Télécharger
-          </button>
+          </a>
 
           {/* Mobile Menu Button */}
           <button className="lg:hidden p-2 hover:bg-secondary rounded-full transition-colors" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
