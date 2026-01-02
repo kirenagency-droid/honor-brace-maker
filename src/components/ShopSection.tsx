@@ -14,8 +14,16 @@ import nekoRx1 from "@/assets/shop/neko-rx1.png";
 import kimKardashian from "@/assets/shop/kim-kardashian.webp";
 import vincentVega from "@/assets/shop/vincent-vega.png";
 import iceSpice from "@/assets/shop/ice-spice.webp";
+import lisa from "@/assets/shop/lisa.png";
 
 const bestSellers = [
+  {
+    name: "LISA",
+    image: lisa,
+    price: 1800,
+    badge: "ICÔNE",
+    badgeType: "new" as const,
+  },
   {
     name: "ICE SPICE",
     image: iceSpice,
