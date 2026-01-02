@@ -4,6 +4,7 @@ import BundleCard from "./BundleCard";
 import strangerDustinCard from "@/assets/shop/stranger-dustin.png";
 import strangerLucasCard from "@/assets/shop/stranger-lucas.png";
 import strangerVecnaCard from "@/assets/shop/stranger-vecna.png";
+import strangerElevenCard from "@/assets/shop/stranger-eleven.png";
 import ishowspeedCard from "@/assets/shop/ishowspeed-card.png";
 import johnWickCard from "@/assets/shop/john-wick.png";
 
@@ -175,7 +176,7 @@ export const StrangerThingsSection = () => {
     },
     {
       name: "Onze",
-      image: "https://fortnite-api.com/images/cosmetics/br/cid_a_357_athena_commando_f_intrepideleven/icon.png",
+      image: strangerElevenCard,
       price: 1800,
       bonus: "ACCESSOIRE DE DOS BONUS !",
       size: 'medium' as const,
