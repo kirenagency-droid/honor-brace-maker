@@ -113,6 +113,63 @@ const bestSellers = [
     image: "https://fortnite-api.com/images/cosmetics/br/cid_315_athena_commando_m_teriyakifish/icon.png",
     price: 1200,
   },
+  {
+    name: "AURA",
+    image: "https://fortnite-api.com/images/cosmetics/br/cid_550_athena_commando_f_starsandstripes/icon.png",
+    price: 800,
+    badge: "POPULAIRE",
+    badgeType: "new" as const,
+  },
+  {
+    name: "CRYSTAL",
+    image: "https://fortnite-api.com/images/cosmetics/br/cid_517_athena_commando_f_frozenredshogun/icon.png",
+    price: 800,
+  },
+  {
+    name: "LYNX",
+    image: "https://fortnite-api.com/images/cosmetics/br/cid_349_athena_commando_f_icelynx/icon.png",
+    price: 1500,
+    badge: "LÉGENDAIRE",
+    badgeType: "custom" as const,
+  },
+  {
+    name: "OMEGA",
+    image: "https://fortnite-api.com/images/cosmetics/br/cid_116_athena_commando_m_carbideblack/icon.png",
+    price: 2000,
+    badge: "LÉGENDAIRE",
+    badgeType: "custom" as const,
+  },
+  {
+    name: "CATALYST",
+    image: "https://fortnite-api.com/images/cosmetics/br/cid_478_athena_commando_f_riftfemale/icon.png",
+    price: 1500,
+  },
+  {
+    name: "SHADOW OPS",
+    image: "https://fortnite-api.com/images/cosmetics/br/cid_086_athena_commando_f_assassin/icon.png",
+    price: 1500,
+  },
+  {
+    name: "SKULL TROOPER",
+    image: "https://fortnite-api.com/images/cosmetics/br/cid_030_athena_commando_m_halloween/icon.png",
+    price: 1500,
+    badge: "RARE",
+    badgeType: "custom" as const,
+  },
+  {
+    name: "TRAVIS SCOTT",
+    image: "https://fortnite-api.com/images/cosmetics/br/cid_434_athena_commando_m_stormfighter/icon.png",
+    price: 1500,
+    badge: "ICÔNE",
+    badgeType: "new" as const,
+  },
+  {
+    name: "THE REAPER",
+    image: "https://fortnite-api.com/images/cosmetics/br/cid_084_athena_commando_m_assassin/icon.png",
+    price: 2000,
+    badge: "OG",
+    badgeType: "custom" as const,
+  },
 ];
 
 const featuredSkins = [
