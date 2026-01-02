@@ -37,8 +37,16 @@ import fishstick from "@/assets/shop/fishstick.png";
 import omega from "@/assets/shop/omega.png";
 import skullTrooper from "@/assets/shop/skull-trooper.png";
 import theReaper from "@/assets/shop/the-reaper.png";
+import yujiItadori from "@/assets/shop/yuji-itadori.png";
 
 const bestSellers = [
+  {
+    name: "YUJI ITADORI",
+    image: yujiItadori,
+    price: 2,
+    badge: "ICÔNE",
+    badgeType: "new" as const,
+  },
   {
     name: "LISA",
     image: lisa,
