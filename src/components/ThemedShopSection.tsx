@@ -9,6 +9,7 @@ import strangerHopperCard from "@/assets/shop/stranger-hopper.png";
 import ishowspeedCard from "@/assets/shop/ishowspeed-card.png";
 import johnWickCard from "@/assets/shop/john-wick.png";
 import hatsuneMikuCard from "@/assets/shop/hatsune-miku.png";
+import iceSpiceBundle from "@/assets/shop/ice-spice-bundle.webp";
 
 interface ThemedItem {
   name: string;
@@ -205,6 +206,21 @@ export const IShowSpeedSection = () => {
   ];
 
   return <ThemedShopSection title="SÉRIE ICÔNE" themeColor="#B71C1C" items={items} />;
+};
+
+export const IceSpiceSection = () => {
+  const items = [
+    {
+      name: "Pack Ice Spice",
+      image: iceSpiceBundle,
+      price: 2800,
+      originalPrice: 3600,
+      discount: "800 V-BUCKS DE RÉDUC.",
+      size: 'wide' as const,
+    },
+  ];
+
+  return <ThemedShopSection title="ICE SPICE" themeColor="#FF6B35" items={items} />;
 };
 
 export const PulpFictionSection = () => {
