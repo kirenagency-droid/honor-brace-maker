@@ -1,11 +1,8 @@
 import { Search, Globe, ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
-
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/50">
+  return <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/50">
       <div className="container mx-auto px-4 h-14 md:h-16 flex items-center justify-between">
         {/* Left section - Logos and Nav */}
         <div className="flex items-center gap-4 md:gap-8">
@@ -39,11 +36,7 @@ const Header = () => {
           {/* Search Bar - Desktop only */}
           <div className="hidden md:flex items-center relative">
             <Search className="absolute left-3 w-4 h-4 text-muted-foreground" />
-            <input
-              type="text"
-              placeholder="Recherche"
-              className="search-input pl-10 w-64"
-            />
+            <input type="text" placeholder="Recherche" className="search-input pl-10 w-64" />
           </div>
 
           {/* Globe Icon - Hidden on very small screens */}
@@ -52,9 +45,7 @@ const Header = () => {
           </button>
 
           {/* Login Button - Smaller on mobile */}
-          <button className="btn-epic-secondary text-xs md:text-sm px-3 md:px-4 py-1.5 md:py-2">
-            Connexion
-          </button>
+          
 
           {/* Download Button - Hidden on mobile */}
           <button className="hidden sm:block btn-epic-primary text-sm">
@@ -62,22 +53,14 @@ const Header = () => {
           </button>
 
           {/* Mobile Menu Button */}
-          <button 
-            className="lg:hidden p-2 hover:bg-secondary rounded-full transition-colors"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            {mobileMenuOpen ? (
-              <X className="w-5 h-5 text-foreground" />
-            ) : (
-              <Menu className="w-5 h-5 text-foreground" />
-            )}
+          <button className="lg:hidden p-2 hover:bg-secondary rounded-full transition-colors" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+            {mobileMenuOpen ? <X className="w-5 h-5 text-foreground" /> : <Menu className="w-5 h-5 text-foreground" />}
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
-      {mobileMenuOpen && (
-        <div className="lg:hidden bg-background border-t border-border/50 py-4 px-4">
+      {mobileMenuOpen && <div className="lg:hidden bg-background border-t border-border/50 py-4 px-4">
           <nav className="flex flex-col gap-3">
             <a href="#" className="nav-link py-2">Découvrir</a>
             <a href="#" className="nav-link py-2">Ma bibliothèque</a>
@@ -86,16 +69,9 @@ const Header = () => {
           </nav>
           <div className="mt-4 flex items-center relative">
             <Search className="absolute left-3 w-4 h-4 text-muted-foreground" />
-            <input
-              type="text"
-              placeholder="Recherche"
-              className="search-input pl-10 w-full"
-            />
+            <input type="text" placeholder="Recherche" className="search-input pl-10 w-full" />
           </div>
-        </div>
-      )}
-    </header>
-  );
+        </div>}
+    </header>;
 };
-
 export default Header;
