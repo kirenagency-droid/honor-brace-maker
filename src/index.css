@@ -46,6 +46,14 @@
     --hero-gradient-start: 210 80% 20%;
     --hero-gradient-end: 220 25% 8%;
     
+    /* Shop card colors - Premium blue theme */
+    --shop-card-bg: 215 50% 55%;
+    --shop-card-border: 215 60% 70%;
+    --shop-section-bg-start: 210 60% 45%;
+    --shop-section-bg-end: 220 50% 35%;
+    --shop-badge-bg: 50 100% 60%;
+    --shop-badge-text: 220 30% 15%;
+    
     /* Shadows */
     --shadow-glow: 0 0 30px hsl(var(--primary) / 0.3);
   }
