@@ -76,7 +76,7 @@ export const HatsuneMikuSection = () => {
     {
       name: "Hatsune Miku",
       image: hatsuneMikuCard,
-      price: 1500,
+      price: 2,
       bonus: "ACCESSOIRE DE DOS BONUS !",
       size: 'large' as const,
     },
@@ -90,7 +90,7 @@ export const TerminatorSection = () => {
     {
       name: "Pack Terminator",
       image: "https://fortnite-api.com/images/cosmetics/br/cid_762_athena_commando_m_intrepidterminator/icon.png",
-      price: 2300,
+      price: 2,
       originalPrice: 3300,
       discount: "1000 V-BUCKS DE RÉDUC.",
       size: 'large' as const,
@@ -98,7 +98,7 @@ export const TerminatorSection = () => {
     {
       name: "Pack Guerre du futur",
       image: "https://fortnite-api.com/images/cosmetics/br/cid_761_athena_commando_f_intrepidsarahconnor/icon.png",
-      price: 2800,
+      price: 2,
       originalPrice: 4400,
       discount: "1600 V-BUCKS DE RÉDUC.",
       size: 'large' as const,
@@ -106,13 +106,13 @@ export const TerminatorSection = () => {
     {
       name: "T-800",
       image: "https://fortnite-api.com/images/cosmetics/br/glider_id_243_intrepidterminator/icon.png",
-      price: 1500,
+      price: 2,
       size: 'small' as const,
     },
     {
       name: "Salut Cyberdyne",
       image: "https://fortnite-api.com/images/cosmetics/br/eid_intrepidterminator/icon.png",
-      price: 300,
+      price: 2,
       size: 'small' as const,
     },
   ];
@@ -125,7 +125,7 @@ export const McLarenSection = () => {
     {
       name: "Pack McLaren 570S",
       image: "https://fortnite-api.com/images/cosmetics/br/wrap_356_intrepidmclaren/icon.png",
-      price: 2500,
+      price: 2,
       size: 'wide' as const,
       link: '/mclaren',
     },
@@ -139,7 +139,7 @@ export const StrangerThingsSection = () => {
     {
       name: "Pack Vecna",
       image: strangerVecnaCard,
-      price: 2500,
+      price: 2,
       originalPrice: 3100,
       discount: "600 V-BUCKS DE RÉDUC.",
       size: 'large' as const,
@@ -147,32 +147,32 @@ export const StrangerThingsSection = () => {
     {
       name: "Onze",
       image: strangerElevenCard,
-      price: 1800,
+      price: 2,
       bonus: "ACCESSOIRE DE DOS BONUS !",
       size: 'medium' as const,
     },
     {
       name: "Dustin Henderson",
       image: strangerDustinCard,
-      price: 1500,
+      price: 2,
       size: 'medium' as const,
     },
     {
       name: "Lucas Sinclair",
       image: strangerLucasCard,
-      price: 1500,
+      price: 2,
       size: 'medium' as const,
     },
     {
       name: "Hopper chef",
       image: strangerHopperCard,
-      price: 1500,
+      price: 2,
       size: 'small' as const,
     },
     {
       name: "Demogorgon",
       image: "https://fortnite-api.com/images/cosmetics/br/cid_a_355_athena_commando_m_intrepiddemogorgon/icon.png",
-      price: 1200,
+      price: 2,
       size: 'small' as const,
     },
   ];
@@ -185,7 +185,7 @@ export const IShowSpeedSection = () => {
     {
       name: "Pack Série Icône Speed",
       image: ishowspeedCard,
-      price: 2800,
+      price: 2,
       originalPrice: 4000,
       discount: "1200 V-BUCKS DE RÉDUC.",
       size: 'wide' as const,
@@ -193,13 +193,13 @@ export const IShowSpeedSection = () => {
     {
       name: "Danse Speed",
       image: "https://fortnite-api.com/images/cosmetics/br/eid_intrepidspeed/icon.png",
-      price: 500,
+      price: 2,
       size: 'small' as const,
     },
     {
       name: "Revêtement Speed",
       image: "https://fortnite-api.com/images/cosmetics/br/wrap_424_intrepidspeed/icon.png",
-      price: 600,
+      price: 2,
       size: 'small' as const,
     },
   ];
@@ -212,7 +212,7 @@ export const PulpFictionSection = () => {
     {
       name: "Pack Pulp Fiction",
       image: "https://fortnite-api.com/images/cosmetics/br/cid_a_330_athena_commando_m_intrepidjules/icon.png",
-      price: 2800,
+      price: 2,
       originalPrice: 4200,
       discount: "1400 V-BUCKS DE RÉDUC.",
       size: 'wide' as const,
@@ -220,14 +220,14 @@ export const PulpFictionSection = () => {
     {
       name: "Vincent Vega",
       image: "https://fortnite-api.com/images/cosmetics/br/cid_a_331_athena_commando_m_intrepidvincent/icon.png",
-      price: 1800,
+      price: 2,
       bonus: "ACCESSOIRE DE DOS BONUS !",
       size: 'medium' as const,
     },
     {
       name: "Mia Wallace",
       image: "https://fortnite-api.com/images/cosmetics/br/cid_a_332_athena_commando_f_intrepidmia/icon.png",
-      price: 1500,
+      price: 2,
       size: 'medium' as const,
     },
   ];
@@ -240,7 +240,7 @@ export const JohnWickSection = () => {
     {
       name: "Pack John Wick",
       image: johnWickCard,
-      price: 2600,
+      price: 2,
       originalPrice: 3800,
       discount: "1200 V-BUCKS DE RÉDUC.",
       size: 'large' as const,
