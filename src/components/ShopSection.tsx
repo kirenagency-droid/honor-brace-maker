@@ -9,12 +9,20 @@ import {
 } from "@/components/ui/carousel";
 
 import ishowspeedSkin from "@/assets/shop/ishowspeed-skin.png";
+import satoruGojo from "@/assets/shop/satoru-gojo.png";
 
 const bestSellers = [
   {
     name: "SPEED",
     image: ishowspeedSkin,
     price: 1800,
+    badge: "ICÔNE",
+    badgeType: "new" as const,
+  },
+  {
+    name: "SATORU GOJO",
+    image: satoruGojo,
+    price: 2000,
     badge: "ICÔNE",
     badgeType: "new" as const,
   },
