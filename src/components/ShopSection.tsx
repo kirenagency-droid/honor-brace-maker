@@ -26,7 +26,7 @@ import lisa from "@/assets/shop/lisa.png";
 import raven from "@/assets/shop/raven.png";
 import darkBomber from "@/assets/shop/dark-bomber.png";
 import aura from "@/assets/shop/aura.png";
-import crystal from "@/assets/shop/crystal.png";
+
 import lynx from "@/assets/shop/lynx.png";
 import drift from "@/assets/shop/drift.png";
 import midas from "@/assets/shop/midas.png";
@@ -123,11 +123,6 @@ const bestSellers = [
     price: 800,
     badge: "POPULAIRE",
     badgeType: "new" as const,
-  },
-  {
-    name: "CRYSTAL",
-    image: crystal,
-    price: 800,
   },
   {
     name: "LYNX",
