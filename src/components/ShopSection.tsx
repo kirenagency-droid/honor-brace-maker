@@ -1,5 +1,12 @@
 import ShopCard from "./ShopCard";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const bestSellers = [
   {
@@ -29,14 +36,21 @@ const bestSellers = [
     image: "https://fortnite-api.com/images/cosmetics/br/cid_161_athena_commando_m_drift/icon.png",
     price: 1500,
   },
-];
-
-const featuredSkins = [
+  {
+    name: "MIDAS",
+    image: "https://fortnite-api.com/images/cosmetics/br/cid_694_athena_commando_m_catburglar/icon.png",
+    price: 2000,
+    badge: "LÉGENDAIRE",
+    badgeType: "custom" as const,
+  },
   {
     name: "FISHSTICK",
     image: "https://fortnite-api.com/images/cosmetics/br/cid_315_athena_commando_m_teriyakifish/icon.png",
     price: 1200,
   },
+];
+
+const featuredSkins = [
   {
     name: "AURA",
     image: "https://fortnite-api.com/images/cosmetics/br/cid_550_athena_commando_f_starsandstripes/icon.png",
@@ -60,9 +74,24 @@ const featuredSkins = [
     badgeType: "new" as const,
   },
   {
-    name: "MIDAS",
-    image: "https://fortnite-api.com/images/cosmetics/br/cid_694_athena_commando_m_catburglar/icon.png",
+    name: "LYNX",
+    image: "https://fortnite-api.com/images/cosmetics/br/cid_349_athena_commando_f_icelynx/icon.png",
+    price: 1500,
+  },
+  {
+    name: "OMEGA",
+    image: "https://fortnite-api.com/images/cosmetics/br/cid_116_athena_commando_m_carbideblack/icon.png",
     price: 2000,
+  },
+  {
+    name: "CATALYST",
+    image: "https://fortnite-api.com/images/cosmetics/br/cid_478_athena_commando_f_riftfemale/icon.png",
+    price: 1500,
+  },
+  {
+    name: "SHADOW OPS",
+    image: "https://fortnite-api.com/images/cosmetics/br/cid_086_athena_commando_f_assassin/icon.png",
+    price: 1500,
   },
 ];
 
@@ -91,65 +120,71 @@ const ShopSection = () => {
           </div>
         </div>
 
-        {/* Best Sellers Section */}
+        {/* Best Sellers Section - Carousel */}
         <div className="mb-10">
           <h3 className="font-fortnite text-xl md:text-2xl text-white mb-4 tracking-wide">
             MEILLEURES VENTES DU JOUR
           </h3>
           
-          <div className="relative">
-            {/* Navigation dots on the left */}
-            <div className="hidden lg:flex absolute -left-8 top-1/2 -translate-y-1/2 flex-col gap-2 z-20">
-              {bestSellers.map((_, index) => (
-                <div 
-                  key={index}
-                  className={`w-2 h-2 rounded-full transition-all ${index === 0 ? 'bg-white h-4' : 'bg-white/40'}`}
-                />
-              ))}
-            </div>
-            
-            {/* Arrow navigation */}
-            <button className="hidden lg:flex absolute -left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 items-center justify-center text-white transition-all">
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-            <button className="hidden lg:flex absolute -right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 items-center justify-center text-white transition-all">
-              <ChevronRight className="w-6 h-6" />
-            </button>
-
-            {/* Cards Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-3 md:-ml-4">
               {bestSellers.map((skin, index) => (
-                <ShopCard 
-                  key={index} 
-                  name={skin.name}
-                  image={skin.image}
-                  price={skin.price}
-                  originalPrice={skin.originalPrice}
-                  badge={skin.badge}
-                  badgeType={skin.badgeType}
-                />
+                <CarouselItem key={index} className="pl-3 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                  <ShopCard 
+                    name={skin.name}
+                    image={skin.image}
+                    price={skin.price}
+                    originalPrice={skin.originalPrice}
+                    badge={skin.badge}
+                    badgeType={skin.badgeType}
+                  />
+                </CarouselItem>
               ))}
-            </div>
-          </div>
+            </CarouselContent>
+            
+            {/* Custom Navigation Arrows */}
+            <CarouselPrevious className="hidden md:flex -left-4 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 border-none text-white" />
+            <CarouselNext className="hidden md:flex -right-4 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 border-none text-white" />
+          </Carousel>
         </div>
 
-        {/* Featured Items Section */}
+        {/* Featured Items Section - Carousel */}
         <div className="mb-10">
           <h3 className="font-fortnite text-xl md:text-2xl text-white mb-4 tracking-wide">
             À LA UNE
           </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 md:gap-4">
-            {featuredSkins.map((skin, index) => (
-              <ShopCard 
-                key={index} 
-                name={skin.name}
-                image={skin.image}
-                price={skin.price}
-                badge={skin.badge}
-                badgeType={skin.badgeType}
-              />
-            ))}
-          </div>
+          
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-3 md:-ml-4">
+              {featuredSkins.map((skin, index) => (
+                <CarouselItem key={index} className="pl-3 md:pl-4 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/6">
+                  <ShopCard 
+                    name={skin.name}
+                    image={skin.image}
+                    price={skin.price}
+                    badge={skin.badge}
+                    badgeType={skin.badgeType}
+                  />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            
+            {/* Custom Navigation Arrows */}
+            <CarouselPrevious className="hidden md:flex -left-4 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 border-none text-white" />
+            <CarouselNext className="hidden md:flex -right-4 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 border-none text-white" />
+          </Carousel>
         </div>
       </div>
     </section>
