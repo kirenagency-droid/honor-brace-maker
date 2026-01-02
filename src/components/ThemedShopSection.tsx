@@ -133,19 +133,6 @@ export const TerminatorSection = () => {
       size: 'large' as const,
     },
     {
-      name: "Terminator",
-      image: "https://fortnite-api.com/images/cosmetics/br/cid_762_athena_commando_m_intrepidterminator/icon.png",
-      price: 1500,
-      size: 'medium' as const,
-    },
-    {
-      name: "Sarah Connor",
-      image: "https://fortnite-api.com/images/cosmetics/br/cid_761_athena_commando_f_intrepidsarahconnor/icon.png",
-      price: 1800,
-      bonus: "COMPREND UNE PIOCHE !",
-      size: 'medium' as const,
-    },
-    {
       name: "T-800",
       image: "https://fortnite-api.com/images/cosmetics/br/glider_id_243_intrepidterminator/icon.png",
       price: 1500,
@@ -187,12 +174,6 @@ export const StrangerThingsSection = () => {
       size: 'large' as const,
     },
     {
-      name: "Vecna",
-      image: strangerVecnaCard,
-      price: 2000,
-      size: 'medium' as const,
-    },
-    {
       name: "Onze",
       image: "https://fortnite-api.com/images/cosmetics/br/cid_a_357_athena_commando_f_intrepideleven/icon.png",
       price: 1800,
@@ -231,13 +212,6 @@ export const StrangerThingsSection = () => {
 export const IShowSpeedSection = () => {
   const items = [
     {
-      name: "IShowSpeed",
-      image: ishowspeedCard,
-      price: 2000,
-      bonus: "ACCESSOIRE DE DOS BONUS !",
-      size: 'large' as const,
-    },
-    {
       name: "Pack Série Icône Speed",
       image: ishowspeedCard,
       price: 2800,
@@ -273,13 +247,6 @@ export const PulpFictionSection = () => {
       size: 'wide' as const,
     },
     {
-      name: "Jules Winnfield",
-      image: "https://fortnite-api.com/images/cosmetics/br/cid_a_330_athena_commando_m_intrepidjules/icon.png",
-      price: 1800,
-      bonus: "ACCESSOIRE DE DOS BONUS !",
-      size: 'medium' as const,
-    },
-    {
       name: "Vincent Vega",
       image: "https://fortnite-api.com/images/cosmetics/br/cid_a_331_athena_commando_m_intrepidvincent/icon.png",
       price: 1800,
@@ -306,25 +273,6 @@ export const JohnWickSection = () => {
       originalPrice: 3800,
       discount: "1200 V-BUCKS DE RÉDUC.",
       size: 'large' as const,
-    },
-    {
-      name: "John Wick",
-      image: johnWickCard,
-      price: 2000,
-      bonus: "ACCESSOIRE DE DOS BONUS !",
-      size: 'medium' as const,
-    },
-    {
-      name: "Sofia",
-      image: johnWickCard,
-      price: 1800,
-      size: 'medium' as const,
-    },
-    {
-      name: "Gold Coin",
-      image: johnWickCard,
-      price: 800,
-      size: 'small' as const,
     },
   ];
 
