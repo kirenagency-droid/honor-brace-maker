@@ -11,10 +11,11 @@ const Checkout = () => {
   const [username, setUsername] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  // Support both formats: skin object or direct properties
   const skin = location.state?.skin || {
-    name: "Skin",
-    image: "/placeholder.svg",
-    price: 0,
+    name: location.state?.name || "Article",
+    image: location.state?.image || "/placeholder.svg",
+    price: location.state?.price || 0,
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -68,7 +69,11 @@ const Checkout = () => {
                     <div className="w-6 h-6 rounded-full bg-[hsl(45_100%_50%)] flex items-center justify-center">
                       <span className="text-[hsl(45_100%_20%)] text-xs font-bold">V</span>
                     </div>
-                    <span className="text-white font-bold text-2xl">{skin.price.toLocaleString()}</span>
+                    <span className="text-white font-bold text-2xl">
+                      {typeof skin.price === 'number' && skin.price < 100 
+                        ? `${skin.price.toFixed(2)} €` 
+                        : `${skin.price.toLocaleString()} V-Bucks`}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -130,7 +135,7 @@ const Checkout = () => {
                         TRAITEMENT...
                       </span>
                     ) : (
-                      `ACHETER POUR ${skin.price.toLocaleString()} V-BUCKS`
+                      `ACHETER POUR ${typeof skin.price === 'number' && skin.price < 100 ? `${skin.price.toFixed(2)} €` : `${skin.price.toLocaleString()} V-BUCKS`}`
                     )}
                   </Button>
                 </form>
