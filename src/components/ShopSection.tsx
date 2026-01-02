@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import ShopCard from "./ShopCard";
 import { ChevronRight, Hand } from "lucide-react";
@@ -182,6 +183,14 @@ const featuredSkins = [
 
 const ShopSection = () => {
   const navigate = useNavigate();
+  
+  const autoplayPlugin1 = useRef(
+    Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true })
+  );
+  
+  const autoplayPlugin2 = useRef(
+    Autoplay({ delay: 4000, stopOnInteraction: false, stopOnMouseEnter: true })
+  );
 
   const handleSkinClick = (skin: { name: string; image: string; price: number }) => {
     navigate("/checkout", { state: { skin } });
@@ -216,13 +225,7 @@ const ShopSection = () => {
               align: "start",
               loop: true,
             }}
-            plugins={[
-              Autoplay({
-                delay: 3000,
-                stopOnInteraction: true,
-                stopOnMouseEnter: true,
-              }),
-            ]}
+            plugins={[autoplayPlugin1.current]}
             className="w-full"
           >
             <CarouselContent className="-ml-3 md:-ml-4">
@@ -259,13 +262,7 @@ const ShopSection = () => {
               align: "start",
               loop: true,
             }}
-            plugins={[
-              Autoplay({
-                delay: 4000,
-                stopOnInteraction: true,
-                stopOnMouseEnter: true,
-              }),
-            ]}
+            plugins={[autoplayPlugin2.current]}
             className="w-full"
           >
             <CarouselContent className="-ml-3 md:-ml-4">
