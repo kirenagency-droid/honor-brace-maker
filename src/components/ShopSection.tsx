@@ -1,5 +1,5 @@
 import ShopCard from "./ShopCard";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Hand } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -7,6 +7,14 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+
+const SwipeIndicator = () => (
+  <div className="flex md:hidden items-center justify-center gap-2 mt-3 text-white/60 text-sm animate-pulse">
+    <Hand className="w-4 h-4 rotate-[-20deg]" />
+    <span>Glissez pour voir plus</span>
+    <ChevronRight className="w-4 h-4" />
+  </div>
+);
 
 import ishowspeedSkin from "@/assets/shop/ishowspeed-skin.png";
 import satoruGojo from "@/assets/shop/satoru-gojo.png";
@@ -203,6 +211,7 @@ const ShopSection = () => {
             <CarouselPrevious className="hidden md:flex -left-4 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 border-none text-white" />
             <CarouselNext className="hidden md:flex -right-4 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 border-none text-white" />
           </Carousel>
+          <SwipeIndicator />
         </div>
 
         {/* Featured Items Section - Carousel */}
@@ -236,6 +245,7 @@ const ShopSection = () => {
             <CarouselPrevious className="hidden md:flex -left-4 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 border-none text-white" />
             <CarouselNext className="hidden md:flex -right-4 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 border-none text-white" />
           </Carousel>
+          <SwipeIndicator />
         </div>
       </div>
     </section>
