@@ -1,5 +1,5 @@
 import ShopCard from "./ShopCard";
-import { ChevronLeft, ChevronRight, Hand } from "lucide-react";
+import { ChevronRight, Hand } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -7,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const SwipeIndicator = () => (
   <div className="flex md:hidden items-center justify-center gap-2 mt-3 text-white/60 text-sm animate-pulse">
@@ -208,6 +209,13 @@ const ShopSection = () => {
               align: "start",
               loop: true,
             }}
+            plugins={[
+              Autoplay({
+                delay: 3000,
+                stopOnInteraction: true,
+                stopOnMouseEnter: true,
+              }),
+            ]}
             className="w-full"
           >
             <CarouselContent className="-ml-3 md:-ml-4">
@@ -243,6 +251,13 @@ const ShopSection = () => {
               align: "start",
               loop: true,
             }}
+            plugins={[
+              Autoplay({
+                delay: 4000,
+                stopOnInteraction: true,
+                stopOnMouseEnter: true,
+              }),
+            ]}
             className="w-full"
           >
             <CarouselContent className="-ml-3 md:-ml-4">
