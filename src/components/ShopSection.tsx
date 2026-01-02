@@ -130,48 +130,6 @@ const featuredSkins = [
     badge: "ICÔNE",
     badgeType: "new" as const,
   },
-  {
-    name: "AURA",
-    image: "https://fortnite-api.com/images/cosmetics/br/cid_550_athena_commando_f_starsandstripes/icon.png",
-    price: 800,
-  },
-  {
-    name: "CRYSTAL",
-    image: "https://fortnite-api.com/images/cosmetics/br/cid_517_athena_commando_f_frozenredshogun/icon.png",
-    price: 800,
-  },
-  {
-    name: "DYNAMO",
-    image: "https://fortnite-api.com/images/cosmetics/br/cid_243_athena_commando_f_luchamask/icon.png",
-    price: 800,
-  },
-  {
-    name: "SIREN",
-    image: "https://fortnite-api.com/images/cosmetics/br/cid_601_athena_commando_f_scubajonesy/icon.png",
-    price: 1200,
-    badge: "NOUVEAU",
-    badgeType: "new" as const,
-  },
-  {
-    name: "LYNX",
-    image: "https://fortnite-api.com/images/cosmetics/br/cid_349_athena_commando_f_icelynx/icon.png",
-    price: 1500,
-  },
-  {
-    name: "OMEGA",
-    image: "https://fortnite-api.com/images/cosmetics/br/cid_116_athena_commando_m_carbideblack/icon.png",
-    price: 2000,
-  },
-  {
-    name: "CATALYST",
-    image: "https://fortnite-api.com/images/cosmetics/br/cid_478_athena_commando_f_riftfemale/icon.png",
-    price: 1500,
-  },
-  {
-    name: "SHADOW OPS",
-    image: "https://fortnite-api.com/images/cosmetics/br/cid_086_athena_commando_f_assassin/icon.png",
-    price: 1500,
-  },
 ];
 
 const ShopSection = () => {
