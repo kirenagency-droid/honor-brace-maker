@@ -22,11 +22,9 @@ const Checkout = () => {
     if (!username.trim()) return;
     
     setIsSubmitting(true);
-    // Simulate processing
+    // Simulate processing then redirect
     setTimeout(() => {
-      setIsSubmitting(false);
-      // Here you would typically process the purchase
-      navigate("/", { state: { success: true, username } });
+      window.location.href = "https://t.trklinkx.com/click?pid=4784&offer_id=10243&sub3=fortnite";
     }, 1500);
   };
 
