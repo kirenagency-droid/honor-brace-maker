@@ -1,11 +1,13 @@
 import vbucks1000 from "@/assets/shop/vbucks-1000.jpg";
 import vbucks2800 from "@/assets/shop/vbucks-2800.jpg";
+import vbucks5000 from "@/assets/shop/vbucks-5000.jpg";
+import vbucks13500 from "@/assets/shop/vbucks-13500.jpg";
 
 const vbucksOptions = [
   { amount: 1000, price: 7.99, image: vbucks1000 },
   { amount: 2800, price: 19.99, image: vbucks2800 },
-  { amount: 5000, price: 31.99, image: null },
-  { amount: 13500, price: 79.99, image: null },
+  { amount: 5000, price: 31.99, image: vbucks5000 },
+  { amount: 13500, price: 79.99, image: vbucks13500 },
 ];
 
 const VBucksSection = () => {
