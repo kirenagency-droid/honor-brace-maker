@@ -13,8 +13,16 @@ import satoruGojo from "@/assets/shop/satoru-gojo.png";
 import nekoRx1 from "@/assets/shop/neko-rx1.png";
 import kimKardashian from "@/assets/shop/kim-kardashian.webp";
 import vincentVega from "@/assets/shop/vincent-vega.png";
+import iceSpice from "@/assets/shop/ice-spice.webp";
 
 const bestSellers = [
+  {
+    name: "ICE SPICE",
+    image: iceSpice,
+    price: 1800,
+    badge: "ICÔNE",
+    badgeType: "new" as const,
+  },
   {
     name: "VINCENT VEGA",
     image: vincentVega,
