@@ -8,7 +8,16 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+import ishowspeedSkin from "@/assets/shop/ishowspeed-skin.png";
+
 const bestSellers = [
+  {
+    name: "SPEED",
+    image: ishowspeedSkin,
+    price: 1800,
+    badge: "ICÔNE",
+    badgeType: "new" as const,
+  },
   {
     name: "PEELY DORÉ",
     image: "https://fortnite-api.com/images/cosmetics/br/cid_701_athena_commando_m_bananagold/icon.png",
