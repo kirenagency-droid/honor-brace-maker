@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import ShopCard from "./ShopCard";
 import { ChevronRight, Hand } from "lucide-react";
 import {
@@ -180,6 +181,12 @@ const featuredSkins = [
 ];
 
 const ShopSection = () => {
+  const navigate = useNavigate();
+
+  const handleSkinClick = (skin: { name: string; image: string; price: number }) => {
+    navigate("/checkout", { state: { skin } });
+  };
+
   return (
     <section id="shop-section" className="relative py-8 md:py-12 overflow-hidden">
       {/* Premium Blue Gradient Background */}
@@ -228,6 +235,7 @@ const ShopSection = () => {
                     originalPrice={skin.originalPrice}
                     badge={skin.badge}
                     badgeType={skin.badgeType}
+                    onClick={() => handleSkinClick(skin)}
                   />
                 </CarouselItem>
               ))}
@@ -269,6 +277,7 @@ const ShopSection = () => {
                     price={skin.price}
                     badge={skin.badge}
                     badgeType={skin.badgeType}
+                    onClick={() => handleSkinClick(skin)}
                   />
                 </CarouselItem>
               ))}
