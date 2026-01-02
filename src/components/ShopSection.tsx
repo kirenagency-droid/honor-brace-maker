@@ -130,6 +130,13 @@ const featuredSkins = [
     badge: "ICÔNE",
     badgeType: "new" as const,
   },
+  {
+    name: "SPEED",
+    image: ishowspeedSkin,
+    price: 1800,
+    badge: "ICÔNE",
+    badgeType: "new" as const,
+  },
 ];
 
 const ShopSection = () => {
