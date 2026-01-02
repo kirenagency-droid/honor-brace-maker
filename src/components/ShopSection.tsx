@@ -109,15 +109,9 @@ const ShopSection = () => {
       <div className="relative z-10 px-4 md:px-8 lg:px-12">
         {/* Section Header */}
         <div className="flex items-center gap-3 mb-8">
-          <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
-            <span className="text-white text-lg">≡</span>
-          </div>
-          <div>
-            <h2 className="font-fortnite text-3xl md:text-4xl lg:text-5xl text-white tracking-wider">
-              BOUTIQUE D'OBJETS
-            </h2>
-            <p className="text-white/60 text-sm">Gérée par l'Epic Games Store</p>
-          </div>
+          <h2 className="font-fortnite text-3xl md:text-4xl lg:text-5xl text-white tracking-wider">
+            BOUTIQUE D'OBJETS
+          </h2>
         </div>
 
         {/* Best Sellers Section - Carousel */}
