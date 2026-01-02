@@ -10,6 +10,7 @@ import {
 
 import ishowspeedSkin from "@/assets/shop/ishowspeed-skin.png";
 import satoruGojo from "@/assets/shop/satoru-gojo.png";
+import nekoRx1 from "@/assets/shop/neko-rx1.png";
 
 const bestSellers = [
   {
@@ -24,6 +25,13 @@ const bestSellers = [
     image: satoruGojo,
     price: 2000,
     badge: "ICÔNE",
+    badgeType: "new" as const,
+  },
+  {
+    name: "NEKO-RX1",
+    image: nekoRx1,
+    price: 1500,
+    badge: "NOUVEAU",
     badgeType: "new" as const,
   },
   {
