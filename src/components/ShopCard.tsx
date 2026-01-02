@@ -88,10 +88,12 @@ const ShopCard = ({
             </h3>
             
             {/* Price */}
-            <div className="flex items-center gap-1.5 mt-1">
-              <span className="text-white font-bold text-sm md:text-base">{price.toFixed(2)} €</span>
+            <div className="flex items-center gap-2 mt-1.5">
+              <span className="bg-white/20 backdrop-blur-sm text-white font-bold text-sm md:text-base px-3 py-1 rounded-full border border-white/30 shadow-lg">
+                {price.toFixed(2)} €
+              </span>
               {originalPrice && (
-                <span className="text-white/50 text-xs line-through ml-1">{originalPrice.toFixed(2)} €</span>
+                <span className="text-white/40 text-xs line-through">{originalPrice.toFixed(2)} €</span>
               )}
             </div>
           </div>
