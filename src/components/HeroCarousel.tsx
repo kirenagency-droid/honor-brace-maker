@@ -157,6 +157,12 @@ const HeroCarousel = () => {
               className="btn-epic-primary text-base"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
+              onClick={() => {
+                const shopSection = document.getElementById('shop-section');
+                if (shopSection) {
+                  shopSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
             >
               {slides[currentSlide].cta}
             </motion.button>

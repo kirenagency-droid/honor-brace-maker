@@ -180,7 +180,7 @@ const featuredSkins = [
 
 const ShopSection = () => {
   return (
-    <section className="relative py-8 md:py-12 overflow-hidden">
+    <section id="shop-section" className="relative py-8 md:py-12 overflow-hidden">
       {/* Premium Blue Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-[hsl(210_70%_50%)] via-[hsl(215_60%_40%)] to-[hsl(220_50%_30%)]" />
       
