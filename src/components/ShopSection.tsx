@@ -117,6 +117,20 @@ const bestSellers = [
 
 const featuredSkins = [
   {
+    name: "KIM KARDASHIAN",
+    image: kimKardashian,
+    price: 2000,
+    badge: "ICÔNE",
+    badgeType: "new" as const,
+  },
+  {
+    name: "ICE SPICE",
+    image: iceSpice,
+    price: 1800,
+    badge: "ICÔNE",
+    badgeType: "new" as const,
+  },
+  {
     name: "AURA",
     image: "https://fortnite-api.com/images/cosmetics/br/cid_550_athena_commando_f_starsandstripes/icon.png",
     price: 800,
