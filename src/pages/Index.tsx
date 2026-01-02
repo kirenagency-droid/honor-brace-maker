@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import HeroCarousel from "@/components/HeroCarousel";
 import ShopSection from "@/components/ShopSection";
 import VBucksSection from "@/components/VBucksSection";
+import Footer from "@/components/Footer";
 import { PageTransition } from "@/components/PageTransition";
 
 const Index = () => {
@@ -14,6 +15,7 @@ const Index = () => {
           <VBucksSection />
           <ShopSection />
         </main>
+        <Footer />
       </div>
     </PageTransition>
   );
