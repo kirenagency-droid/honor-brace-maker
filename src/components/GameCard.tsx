@@ -20,10 +20,12 @@ const GameCard = ({ title, image, rating = "12+" }: GameCardProps) => {
       </div>
 
       {/* Game Image */}
-      <div className="aspect-[3/4] overflow-hidden">
+      <div className="aspect-[3/4] overflow-hidden bg-muted">
         <img
           src={image}
           alt={title}
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
         />
       </div>

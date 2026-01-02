@@ -58,11 +58,13 @@ const BundleCard = ({
       )}
 
       {/* Image */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden bg-muted/30">
         <img
           src={image}
           alt={name}
           loading="lazy"
+          decoding="async"
+          fetchPriority="low"
           onError={(e) => {
             const img = e.currentTarget;
             if (img.dataset.fallback) return;

@@ -33,12 +33,14 @@ const SkinCard = ({ name, image, price, rarity, isNew = false }: SkinCardProps) 
       )}
 
       {/* Skin Image */}
-      <div className="aspect-[3/4] overflow-hidden relative">
+      <div className="aspect-[3/4] overflow-hidden relative bg-muted">
         <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent z-[1]" />
         <img
           src={image}
           alt={name}
           loading="lazy"
+          decoding="async"
+          fetchPriority="low"
           onError={(e) => {
             const img = e.currentTarget;
             if (img.dataset.fallback) return;

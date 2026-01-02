@@ -50,11 +50,15 @@ const VBucksSection = () => {
             className="group relative bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 rounded-lg md:rounded-xl overflow-hidden cursor-pointer transition-all duration-300 hover:scale-[1.03] hover:border-primary hover:shadow-[0_0_25px_rgba(255,204,0,0.3)]"
           >
             {/* V-Bucks Image */}
-            <img 
-              src={option.image} 
-              alt={`${option.amount} V-Bucks`}
-              className="w-full aspect-[3/4] object-cover object-top"
-            />
+            <div className="w-full aspect-[3/4] bg-muted/30">
+              <img 
+                src={option.image} 
+                alt={`${option.amount} V-Bucks`}
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
 
             {/* Bottom Info */}
             <div className="absolute bottom-2 md:bottom-3 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1">

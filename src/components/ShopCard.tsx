@@ -58,11 +58,13 @@ const ShopCard = ({
       )}
 
       {/* Character Image */}
-      <div className="relative w-full aspect-[3/4] overflow-hidden">
+      <div className="relative w-full aspect-[3/4] overflow-hidden bg-muted/30">
         <img
           src={image}
           alt={name}
           loading="lazy"
+          decoding="async"
+          fetchPriority="low"
           onError={(e) => {
             const img = e.currentTarget;
             if (img.dataset.fallback) return;
